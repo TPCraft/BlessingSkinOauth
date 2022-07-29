@@ -1,18 +1,16 @@
 {
     "name": "tpcraft/blessing-skin-oauth",
-    "description": "TPCraft BlessingSkin Oauth Client",
-    "license": "MIT",
     "authors": [{
         "name": "LF_Mcxixif_",
         "email": "2398441549@qq.com"
     }],
     "autoload": {
         "psr-4": {
-            "Tpcraft\\BlessingSkinOauth\\": ""
+            "Tpcraft\\BlessingSkinOauth\\": "src/"
         }
     },
     "require": {
         "php": "^7.2|^8",
         "socialiteproviders/manager": "^4.0"
-    }
+    },
 }
