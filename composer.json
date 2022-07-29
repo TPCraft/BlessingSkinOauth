@@ -12,5 +12,5 @@
     "require": {
         "php": "^7.2|^8",
         "socialiteproviders/manager": "^4.0"
-    },
+    }
 }
