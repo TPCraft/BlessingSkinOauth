@@ -22,7 +22,7 @@ class Provider extends AbstractProvider
      */
     protected function getAuthUrl($state)
     {
-        return $this->buildAuthUrlFromBase('https://vue.tpcraft.cn/Auth/Oauth/Authorize', $state);
+        return $this->buildAuthUrlFromBase('https://tpcraft.cn/Auth/Oauth/Authorize', $state);
     }
 
     /**
@@ -30,7 +30,7 @@ class Provider extends AbstractProvider
      */
     protected function getTokenUrl()
     {
-        return 'https://develop.tpcraft.cn/Oauth/AccessToken';
+        return 'https://api.tpcraft.cn/Oauth/AccessToken';
     }
 
     /**
@@ -38,7 +38,7 @@ class Provider extends AbstractProvider
      */
     protected function getUserByToken($token)
     {
-        $response = $this->getHttpClient()->get('https://develop.tpcraft.cn/Oauth/GetPassInfo', [
+        $response = $this->getHttpClient()->get('https://api.tpcraft.cn/Oauth/GetPassInfo', [
             'headers' => [
                 'Authorization' => 'Bearer '.$token,
             ],
